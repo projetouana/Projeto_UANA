@@ -29,27 +29,33 @@ public class PostagemController {
 	
 	@GetMapping
 	public ResponseEntity<List<Postagem>> getAllPostagem(){
+
+
 		return ResponseEntity.ok(postagemRepository.findAll());
 	}
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<Postagem> getByIdPostagem(@PathVariable long id){
+
 		return postagemRepository.findById(id).map(resposta -> ResponseEntity.ok(resposta))
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
 	@GetMapping("/texto/{texto}")
 	public ResponseEntity<List<Postagem>> getAllByTexto(@PathVariable String texto){
+
 		return ResponseEntity.ok(postagemRepository.findAllByTextoContainingIgnoreCase(texto));
 	}
 	
 	@PostMapping
 	public ResponseEntity<Postagem> postPostagem(@Valid @RequestBody Postagem postagem){
+
 		return ResponseEntity.status(HttpStatus.CREATED).body(postagemRepository.save(postagem));
 	}
 	
 	@PutMapping
 	public ResponseEntity<Postagem> putPostagem(@Valid @RequestBody Postagem postagem){
+
 		return postagemRepository.findById(postagem.getId())
 				.map(resposta -> ResponseEntity.ok().body(postagemRepository.save(postagem)))
 				.orElse(ResponseEntity.notFound().build());
@@ -57,8 +63,10 @@ public class PostagemController {
 	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<?> deletePostagem(@PathVariable long id){
+
 		return postagemRepository.findById(id).map(resposta ->{
 			postagemRepository.deleteById(id);
+
 			return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 		}).orElse(ResponseEntity.notFound().build());
 	}
