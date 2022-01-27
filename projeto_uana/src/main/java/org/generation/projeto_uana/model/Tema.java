@@ -39,42 +39,52 @@ public class Tema {
 	// Getters e Setters
 
 	public long getId() {
+
 		return id;
 	}
 
 	public void setId(long id) {
+
 		this.id = id;
 	}
 
 	public String getAssunto() {
+
 		return assunto;
 	}
 
 	public void setAssunto(String assunto) {
+
 		this.assunto = assunto;
 	}
 
 	public long getRelevancia() {
+
 		return relevancia;
 	}
 
 	public void setRelevancia(long relevancia) {
+
 		this.relevancia = relevancia;
 	}
 
 	public String getDescricao() {
+
 		return descricao;
 	}
 
 	public void setDescricao(String descricao) {
+
 		this.descricao = descricao;
 	}
 
 	public List<Postagem> getPostagem() {
+
 		return postagem;
 	}
 
 	public void setPostagem(List<Postagem> postagem) {
+
 		this.postagem = postagem;
 	}
 	
