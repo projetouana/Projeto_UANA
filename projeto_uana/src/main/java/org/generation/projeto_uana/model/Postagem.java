@@ -26,7 +26,7 @@ public class Postagem {
 	@Size(max = 255, message = "O atributo IMG_URL permite no máximo 255 caracteres")  //PErguntar sobre o tamanho da imagem
 	private String img_url;
 	
-	@NotBlank
+	@NotBlank(message = "O atributo Texto é obrigatório e não aceita espaço vazio")
 	@Size(max = 3000, message = "O atributo Texto permite no máximo 3000 caracteres")
 	private String texto;
 	
