@@ -1,25 +1,25 @@
 
 
-<h1 align="center"> Projeto-Integrador</h1>
-
+<h1 align="center"> </h1>
 
 
 <h1 align="center"><img src="https://github.com/projetouana.png" alt="Uanaimagem" width="200" heigth= "200"></h1>
-<h1>UANÁ</h1> <br>
+<h1 align="center">UANÁ</h1> 
+<h3 align="center">Do Tupi-Guarani: vagalume, aquele que leva a luz a todos os lugares.</h3><br>
 
 ## 📚: Descrição do projeto:
-<p> <b>Uaná</b> é uma Rede social que surgiu com o propósito de unir e compartilhar energia limpa e sustentável para todes. onde as pessoas poderão ler sobre a ideia de
+<p style="text=align: justify;"> <b>Uaná</b> é uma Rede social que surgiu com o propósito de unir e compartilhar energia limpa e sustentável para todes. onde as pessoas poderão ler sobre a ideia de
 uma determinada ONG ou COMUNIDADE para fornercer energia sustentável, promovendo contato com a ONG, e até mesmo divulgando em outras plataformas.</p><br>
 
 ## 🛠️: Etapas do Desenvolvimento:
    ### Back-end
 - [x] Criar um email próprio  do PI
 - [x] Definição do escopo do projeto -> Rede Social
-- [x] Modelagem do Banco de Dados utilizando Mysql seguindo o modelo DER
-- [x] Criação do projeto usando o Spring Boot
+- [x] Modelagem do Banco de Dados utilizando MySQL seguindo o modelo DER
+- [x] Criação do projeto utilizando JAVA e Spring Boot
 - [x] Desenvolvimento das camadas de Model, repository, controller, service, security e test do projeto 
   
-  ## 💡: Futuras Implementações:
+## 💡: Futuras Implementações:
 ### Front-end
 
    
