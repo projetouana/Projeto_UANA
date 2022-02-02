@@ -3,12 +3,14 @@ package org.generation.projeto_uana.model;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
@@ -26,12 +28,14 @@ public class Usuario {
 	@Size(min = 3, max = 255, message = "O atributo Nome permite no máximo 255 caracteres")
 	private String nome;
 	
-	@NotBlank(message = "O atributo Email é obrigatório e não aceita espaço vazio")
+	@NotBlank(message = "O atributo Email é obrigatório e não aceita espaços vazios")
 	@Size(max = 255, message = "O atributo Email permite no máximo 255 caracteres")
+	@Email
+	@Column(unique=true)
 	private String email;
 	
-	@NotBlank(message = "O atributo Senha é obrigatório e não aceita espaço vazio")
-	@Size(min = 8, max = 255, message = "O atributo Senha exige no minimo 8 caracteres e no máximo 255 caracteres")
+	@NotBlank(message = "O atributo Senha é obrigatório e não aceita espaços vazios")
+	@Size(min = 8, message = "O atributo Senha exige no minimo 8 caracteres ")
 	private String senha;
 	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
