@@ -39,12 +39,12 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeHttpRequests()
         .antMatchers("/usuarios/logar").permitAll()
-        .antMatchers("/usuarios/cadastrar").permitAll() //Liberar o findAll para a próxima atividade
+        .antMatchers("/usuarios/cadastrar").permitAll() 
         .antMatchers(HttpMethod.OPTIONS).permitAll()
         .anyRequest().authenticated()
         .and().httpBasic()
         .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-        .and().cors() //Permite que outra aplicação em outro servidor consiga acessar nossa aplicação
+        .and().cors() 
         .and().csrf().disable();
 	}
 
