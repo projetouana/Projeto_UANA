@@ -12,9 +12,15 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.validator.constraints.URL;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
+/***
+ * 
+ * @author Grupo_6
+ * Responsabilidade da model gravar nome do usuario
+ *
+ */
 @Entity
 @Table(name = "tb_postagens")
 public class Postagem {
@@ -23,7 +29,8 @@ public class Postagem {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@Size(max = 255, message = "O atributo IMGURL permite no máximo 255 caracteres")  //Perguntar sobre o tamanho da imagem
+	@URL
+	@Size(max = 700, message = "O atributo IMGURL permite no máximo 255 caracteres")  //Perguntar sobre o tamanho da imagem
 	private String imgUrl;
 	
 	@NotBlank(message = "O atributo Texto é obrigatório e não aceita espaço vazio")
