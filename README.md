@@ -10,6 +10,16 @@
 ## 📚: Descrição do projeto:
 <p style="text=align: justify;"> <b>Uaná</b> é uma Rede social que surgiu com o propósito de unir e compartilhar energia limpa e sustentável para todes. onde as pessoas poderão ler sobre a ideia de
 uma determinada ONG ou COMUNIDADE para fornercer energia sustentável, promovendo contato com a ONG, e até mesmo divulgando em outras plataformas.</p><br>
+<table>
+  <tr>
+<h2 align="left">⚙️:Tecnologias Utilizadas:</h2>
+<div style="display: inline_block; padding-right:100">
+<a href="https://www.java.com/" target="_blank" title="Java"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="70" height="70"/></a> 
+<a href="https://www.mysql.com/" target="_blank" title="MySQL"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="70" height="70"/></a>
+<a href="https://postman.com/" target="_blank" title="PostMan"><img align="center" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width=width="50" height="50"/></a> 
+<a href="https://spring.io/" target="_blank" title="SpringBoot"><img align="center" src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="50" height="50"/></a>
+</div>
+   
 
 ## 🛠️: Etapas do Desenvolvimento:
    ### Back-end
