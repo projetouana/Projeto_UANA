@@ -22,7 +22,7 @@ public class Tema {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
-	@NotBlank(message = "O atributo assunto não aceita apenas espaços vazios.")
+	//@NotBlank(message = "O atributo assunto não aceita apenas espaços vazios.")
 	@Size(max = 80, message = "O atributo assunto máximo de 80 caracteres.")
 	private String assunto;
 
@@ -32,61 +32,50 @@ public class Tema {
 	@Size(max = 100, message = "O atributo descricao máximo de 100 caracteres.")
 	private String descricao;
 	
-	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("tema")
 	private List<Postagem> postagem;
-
+	
 	// Getters e Setters
 
 	public long getId() {
-
 		return id;
 	}
 
 	public void setId(long id) {
-
 		this.id = id;
 	}
 
 	public String getAssunto() {
-
 		return assunto;
 	}
 
 	public void setAssunto(String assunto) {
-
 		this.assunto = assunto;
 	}
 
 	public long getRelevancia() {
-
 		return relevancia;
 	}
 
 	public void setRelevancia(long relevancia) {
-
 		this.relevancia = relevancia;
 	}
 
 	public String getDescricao() {
-
 		return descricao;
 	}
 
 	public void setDescricao(String descricao) {
-
 		this.descricao = descricao;
 	}
 
 	public List<Postagem> getPostagem() {
-
 		return postagem;
 	}
 
 	public void setPostagem(List<Postagem> postagem) {
-
 		this.postagem = postagem;
-	}
-	
+	}	
 
 }

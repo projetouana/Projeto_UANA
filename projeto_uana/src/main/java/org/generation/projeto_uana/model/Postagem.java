@@ -50,17 +50,14 @@ public class Postagem {
 	@ManyToOne
 	@JsonIgnoreProperties("postagem")
 	private Usuario usuario;
-
 	
 	// Getters e Setters
-	
-	public long getId() {
 
+	public long getId() {
 		return id;
 	}
 
 	public void setId(long id) {
-
 		this.id = id;
 	}
 
@@ -73,12 +70,10 @@ public class Postagem {
 	}
 
 	public String getTexto() {
-
 		return texto;
 	}
 
 	public void setTexto(String texto) {
-
 		this.texto = texto;
 	}
 
@@ -91,34 +86,27 @@ public class Postagem {
 	}
 
 	public String getContato() {
-
 		return contato;
 	}
 
 	public void setContato(String contato) {
-
 		this.contato = contato;
 	}
 
 	public Tema getTema() {
-
 		return tema;
 	}
 
 	public void setTema(Tema tema) {
-
 		this.tema = tema;
 	}
 
 	public Usuario getUsuario() {
-
 		return usuario;
 	}
 
 	public void setUsuario(Usuario usuario) {
-
 		this.usuario = usuario;
 	}
-	
-	
+
 }
